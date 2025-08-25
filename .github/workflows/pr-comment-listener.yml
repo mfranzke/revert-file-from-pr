@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run Revert File Action
-        uses: mfranzke/revert-file-from-pr@v0
+        uses: ./ # if somebody wants to use this action, please use mfranzke/revert-file-from-pr@v0 instead
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
