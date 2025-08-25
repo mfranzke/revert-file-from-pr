@@ -1,2 +1,17 @@
-# revert-file-from-pr
-Reverts a single file in a PR to the base branch's version based on a PR comment.
+# Revert File Action
+
+Reverts a file in a PR back to the base branch version when a comment like:
+
+```
+/revert-file path/to/file.txt
+```
+
+...is added to the PR.
+
+## Usage
+
+```yaml
+- uses: mfranzke/revert-file-from-pr@v1
+  with:
+    github-token: ${{ secrets.GITHUB_TOKEN }}
+```

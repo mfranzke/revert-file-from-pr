@@ -1,0 +1,16 @@
+name: PR Comment Revert File
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  revert-file:
+    if: github.event.issue.pull_request != null
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Revert File Action
+        uses: mfranzke/revert-file-from-pr@v0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
