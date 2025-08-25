@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2025 Maximilian Franzke <mfr@nzke.net>
+#
+# SPDX-License-Identifier: MIT
+
+.DS_Store
+node_modules
+npm-debug.log
+.history
+.idea
