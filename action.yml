@@ -7,4 +7,4 @@ inputs:
     required: true
 runs:
   using: "node24"
-  main: "entrypoint.js"
+  main: "scripts/entrypoint.js"
