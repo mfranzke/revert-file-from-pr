@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Maximilian Franzke <mfr@nzke.net>
+#
+# SPDX-License-Identifier: MIT
+
 name: "Revert File From Pull Request Action"
 description: "Reverts a specific file in a Pull Request (PR) to the base branch version when a specific comment is posted."
 author: "Maximilian Franzke"
